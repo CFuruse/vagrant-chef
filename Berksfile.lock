@@ -1,0 +1,9 @@
+DEPENDENCIES
+  apache2
+  yum-epel
+
+GRAPH
+  apache2 (3.1.0)
+  yum (3.6.1)
+  yum-epel (0.6.2)
+    yum (~> 3.2)

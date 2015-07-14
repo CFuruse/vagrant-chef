@@ -1,0 +1,15 @@
+{
+  "apache": {
+    "listen_ports": [10000],
+    "keepalive": "Off"
+  },
+  "run_list": [
+    "recipe[yum-epel]",
+    "recipe[apache2]",
+    "recipe[apache2::mod_python]",
+    "recipe[zsh]"
+  ],
+  "automatic": {
+    "ipaddress": "com"
+  }
+}
